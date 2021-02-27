@@ -1,0 +1,240 @@
+/* navbar */
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color:  rgb(60, 59, 59);
+    color: white;
+    font-family: 'Baloo 2', cursive;
+
+}
+/* LEFT */
+#left{
+    display: flex;
+    align-items: center;
+
+}
+#left img{
+    width: 90px;
+    
+}
+#logoText ul{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+#logoText ul li{
+    list-style: none;
+    margin: 0px 5px;
+}
+
+/* MID */
+#mid{display: flex;
+    align-items: center;
+}
+#mid img{
+    width: 50px;
+}
+
+/* RIGHT */
+#right
+    {display: flex;
+    align-items: center;
+    
+}
+#right input{
+    margin-right: 10px;
+    border: none;
+    font-weight: bold;
+    height: 28px;
+    width: 207px;
+    border-radius: 6px;
+    padding: 5px 5px;
+}
+#right button{
+    border: 1px solid green;
+    color: green;
+    font-weight: bold;
+    height: 38px;
+    width: 101px;
+    background-color: transparent;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* SECTION TAKE_NOTE */
+.take_notes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    font-family: 'Baloo 2', cursive;
+
+}
+.take_notes::before{
+    content: "";
+    position: absolute;
+    background: url("./bg3.jpg") no-repeat center center/cover;
+    height: 286px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#greet{
+    /* border: 1px solid black; */
+    margin-bottom: 10px;
+
+}
+.note{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 540px;
+    height: 209px;
+    padding: 10px;
+
+}
+.note textarea{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 5px;
+
+}
+.note button{
+    margin-top: 8px;
+    width: 102px;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #0015f4;
+    color: white;
+}
+.note button:hover{
+    margin-top: 8px;
+    width: 110px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #4654ec;
+    color: rgb(0, 0, 0);
+}
+
+
+.notes-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    margin-top: 16px;
+    width: 82%;
+    margin-left: 148px;
+}
+.myNotes{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width: 959px;
+}
+.saved_note{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(21, 21, 21);
+    background-color: #e4e4e4;
+    padding: 15px;
+    margin: 8px;
+    width: 270px;
+    border-radius: 22px;
+    font-family: 'Baloo 2', cursive;
+}
+
+.importantNote{
+    display: inline-block;
+    border: 2px solid black;
+    background-color: #ff4e4e;
+    border-radius: 6px;
+    width: 98px;
+    padding-left: 11px;
+    font-weight: bold;
+}
+.deleteButton{
+    margin-top: 8px;
+    width: 112px;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #0015f4;
+    color: white;
+}
+.deleteButton:hover{
+    margin-top: 8px;
+    width: 110px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #4654ec;
+    color: rgb(0, 0, 0);
+}
+
+#hr{
+    height: 1px;
+    background: #c2c3ff;
+    box-shadow: 0px 3px 5px 2px rgba(174, 174, 247, 0.7);
+}
+.container input{
+    border: 2px solid #2e2222;
+}
+#table{
+    width: 66%;
+    height: 300px;
+    /* margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto; */
+    margin: 20px auto;
+    overflow-y: scroll;
+}
+#alert{
+    width: 60%;
+    margin: 36px 20%;
+    
+}
+/*SCROLL BAR SECTION*/
+#table::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  #table::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  #table::-webkit-scrollbar-thumb {
+    background: rgb(78, 0, 0); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  #table::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+  /* FOOTER SECTION */
+  #footer{
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 7px;
+      font-size: 1rem;
+  }
